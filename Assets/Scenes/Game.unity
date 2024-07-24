@@ -2287,7 +2287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 46.2, y: 8.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &914531311
@@ -2337,8 +2337,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2499,7 +2499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda1613fa05a1d342a33ccdeb5b7b778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreData: {fileID: 0}
+  scoreData: {fileID: 11400000, guid: 621e070df23014148a9c61660f712ca5, type: 2}
   scoreText: {fileID: 914531311}
 --- !u!114 &1005150411
 MonoBehaviour:
@@ -2973,7 +2973,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054912639}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3309,6 +3309,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6347526707063000787, guid: 8bc6ec9b55feb7d4bb5518f836d4a796, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549846571906669881, guid: 8bc6ec9b55feb7d4bb5518f836d4a796, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3773,6 +3777,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4039420216823883465, guid: 765667ee44e78e0489d434053560dfd8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4739820103215391666, guid: 765667ee44e78e0489d434053560dfd8, type: 3}
       propertyPath: m_LocalScale.x
       value: 30
@@ -3825,6 +3833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 7005327854727834519, guid: 765667ee44e78e0489d434053560dfd8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7600345493512701835, guid: 765667ee44e78e0489d434053560dfd8, type: 3}
       propertyPath: maxHealth
       value: 1000000000
@@ -3872,7 +3884,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -30}
+  m_AnchoredPosition: {x: -89, y: 9.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1440644421
@@ -3922,8 +3934,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
