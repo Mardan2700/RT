@@ -22,10 +22,21 @@ public class GameManagerScript : MonoBehaviour
     {
         gameOverUI.SetActive(true);
     }
-
+    
+    public void goQuit()
+    {
+        Application.Quit();
+    }
+    
+    public void goMainMenu()
+    {
+        Debug.Log("MainMenu");
+        SceneManager.LoadScene("MainMenu");
+    }
+    
     public void restart()
     {
         Debug.Log("restart");
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Game");
     }
 }

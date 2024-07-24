@@ -10,16 +10,20 @@ public class Spawner : MonoBehaviour
 
     public Transform[] points;
 
-    public float intervall = 200;
+    public float intervall;
 
     private float timer;
-    
+
+
+    public Difficulty difficulty;
     
     void Start()
     {
+        intervall = difficulty.intervall;
         
     }
-
+    
+    
     
     void Update()
     {

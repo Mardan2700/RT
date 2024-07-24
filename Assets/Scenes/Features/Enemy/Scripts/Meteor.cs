@@ -11,11 +11,12 @@ public class Meteor : MonoBehaviour
     public const int Rock = 1;
     public const int Paper = 2;
     public Score scoreData;
-    
+    public Difficulty difficulty;
     
     // Start is called before the first frame update
     void Start()
     {
+        speed = difficulty.speed;
         typ = Random.Range(0, 3);
     }
 
