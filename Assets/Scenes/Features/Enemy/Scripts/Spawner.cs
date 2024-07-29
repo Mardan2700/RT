@@ -14,13 +14,14 @@ public class Spawner : MonoBehaviour
 
     private float timer;
 
+    public Score scoreData;
 
     public Difficulty difficulty;
     
     void Start()
     {
         intervall = difficulty.intervall;
-        
+        scoreData.Reset();
     }
     
     

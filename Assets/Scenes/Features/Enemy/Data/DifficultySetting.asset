@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DifficultySetting
   m_EditorClassIdentifier: 
   currentDifficulty: 2
-  speed: 35
+  speed: 2
   intervall: 0.8

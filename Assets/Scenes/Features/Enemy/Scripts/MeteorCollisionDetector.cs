@@ -21,7 +21,6 @@ public class MeteorCollisionDetector : MonoBehaviour
         
         if (col.gameObject.CompareTag("Hand"))
         {
-            audioSource.Play();
             handController = col.gameObject.GetComponent<HandController>();
         }
         else if (col.gameObject.CompareTag("Wall"))
@@ -46,6 +45,7 @@ public class MeteorCollisionDetector : MonoBehaviour
             scoreData.AddScore(scoreValue);
             Debug.Log("Meteor Zerstört: " + scoreData.score);
             Instantiate(explosionPrefab, transform.position, transform.rotation);
+            audioSource.Play();
             Destroy(gameObject);
         }
     }

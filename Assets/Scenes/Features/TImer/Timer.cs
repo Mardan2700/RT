@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    private float timer = 10; // Initialisiere den Timer mit 3 Sekunden
+    private float timer = 20; // Initialisiere den Timer mit 3 Sekunden
     public TMP_Text timerText; // Referenz zum Text-Element im UI
     public GameManagerScript gameManager;
     private bool isDead;
@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour
             }
         }
         
-        timerText.text = "Timer: " + timer.ToString("F2") + " Sekunden";
+        timerText.text = "Timer: " + timer.ToString("F2") + " Seconds";
 
         if (timer <= 0 && !isDead)
         {

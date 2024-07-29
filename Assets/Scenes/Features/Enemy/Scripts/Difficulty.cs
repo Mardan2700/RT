@@ -16,7 +16,7 @@ public class Difficulty : ScriptableObject
     public float intervall;
 
     
-    
+    private void OnEnable() => hideFlags = HideFlags.DontUnloadUnusedAsset;
     
     public void SetValues(DifficultyLevel difficulty, int speed, float intervall)
     {

@@ -19,17 +19,19 @@ public class DifficultyManager : MonoBehaviour
     {
         difficultyValues.onValueChanged.AddListener((value) => OnDrop(value));
     }
-
+    
+    
+    
 
     private void OnDrop(int value)
     {
         switch (value)
         {
-            case 0: difficulty.SetValues(DifficultyLevel.Easy, 25, 2);
+            case 0: difficulty.SetValues(DifficultyLevel.Easy, 10, 0.9f);
                 break;
-            case 1: difficulty.SetValues(DifficultyLevel.Medium, 30, 1);
+            case 1: difficulty.SetValues(DifficultyLevel.Medium, 15, 0.7f );
                 break;
-            case 2: difficulty.SetValues(DifficultyLevel.Hard, 35, 0.8f);
+            case 2: difficulty.SetValues(DifficultyLevel.Hard, 18, 0.5f);
                 break;
         }
     }
